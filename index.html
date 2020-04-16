@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Espais Joves</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <!-- carga NO TOCAR-->
+        <div class="col-md-12" id="contenedor_carga">
+            <img class="logo" id="logo" src="./img/logo.png" height="150">
+
+            <img class="load" id="load" src="img/load.gif" height="150">
+        </div>
+            
+        <!-- BARRA DEL NAVEGADOR -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+            <a class="navbar-brand" href="index.html"><img src="./img/logo.png" width="150"></a>
+            
+            <div class="collapse navbar-collapse nav navbar-nav navbar-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Noticies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comunitat</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Area
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Creació Artistica</a>
+                    <a class="dropdown-item" href="#">Ludoteca</a>
+                    <a class="dropdown-item" href="#">Diversitat</a>
+                    <a class="dropdown-item" href="#">Art moviment</a>
+                    <a class="dropdown-item" href="#">Música i so</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Propostes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="collapse navbar-collapse nav navbar-nav navbar-right">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./html/sesion.html">sesion</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+        
+        <!-- CARRUSEL -->
+        
+        <br><br><br>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/1.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/4.jpg" alt="four slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <br><br>
+        <!-- POST Y EL MENU -->
+
+        <div class="col-md-12 row">
+            
+            <div class="col-md-9">
+                <!-- POSTS -->
+
+                <div class="col-sm-12 row">
+
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/1.png" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">La creatividad del graffiti</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="./html/post.html" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Taller de 1000 idees creatives</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="./html/taller.html" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <img class="card-img-top" src="./img/4.jpg" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">Taller de 1000 idees creatives</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="./html/taller.html" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                      </div>
+                      <br>
+                  </div>
+
+                    <div class="col-sm-6">
+                      <div class="card">
+                          <img class="card-img-top" src="./img/1.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title">La creatividad del graffiti</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="./html/post.html" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                      </div>
+                      <br>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/1.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">La creatividad del graffiti</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="./html/post.html" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Taller de 1000 idees creatives</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="./html/taller.html" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                    
+                    
+
+                </div>
+
+                <!-- Paginas -->
+                <br>
+
+                <div class="paginacion">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <!-- trobar -->
+                <div class="trobar">
+                    <h1>Cercar</h1><hr>
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+
+                <br>
+
+                <!-- etiquetes -->
+                <div class="etiquetes">
+                    <h1>tags</h1><hr>
+                    <button type="button" class="btn btn-outline-dark">ludoteca</button>
+                    <button type="button" class="btn btn-outline-dark">Videojocs</button>
+                    <button type="button" class="btn btn-outline-dark">Literatura</button>
+                    <button type="button" class="btn btn-outline-dark">Cultura</button>
+                    <button type="button" class="btn btn-outline-dark">Cinema</button>
+                    <button type="button" class="btn btn-outline-dark">Dança</button>
+                    <button type="button" class="btn btn-outline-dark">Musica</button>
+                    <button type="button" class="btn btn-outline-dark">DIY</button>
+                </div>
+
+                <br>
+
+                <!-- xarxes socials -->
+                <div class="xarxes">
+                    <h1>Xarxes socials</h1><hr>
+                    <h3 class="card-text"><a class="active" href="#">Facebook</a></h3>
+                    <h3 class="card-text"><a class="active" href="#">twitter</a></h3>
+                    <h3 class="card-text"><a class="active" href="#">Instagram</a></h3>
+                    <h3 class="card-text"><a class="active" href="#">YouTube</a></h3>
+                </div>
+
+                <br>
+
+                <!-- INJUVE LOGO -->
+                <div class="subencionat">
+                    <h1>Patrocinat per:</h1><hr>
+                    <div class="col-sm-12">
+                        <img src="./img/índice.png">
+                        <img src="./img/a-palma.png">
+                    </div>
+                </div>
+                <br>
+
+                <!-- enllaços d'interes -->
+                <div class="enllasos">
+                    <h1>Enllaços d’interès</h1><hr>
+                    <h3 class="card-text"><a class="active" href="#">Dinamo</a></h3>
+                    <h3 class="card-text"><a class="active" href="#">PalmaJove</a></h3>
+                    <h3 class="card-text"><a class="active" href="#">Serveis de Joventut</a></h3>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br>
+
+        <!-- PIE -->
+        <footer>
+            <hr>
+            <div class="text-center">
+                <p>Desenvolupat per: Joan Sebastia Penya Torres - (c) 2020</p>
+            </div>
+        </footer>
+
+        <!-- SCRIPTING -->
+        <script>
+            window.onload = function(){
+                var contenedor = document.getElementById('contenedor_carga');
+
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+            }
+        </script>
+    </body>
+</html>

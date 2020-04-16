@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicia session</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+    <body>
+        <!-- carga NO TOCAR-->
+        <div class="col-md-12" id="contenedor_carga">
+            <img class="logo" id="logo" src="../img/logo.png" height="150">
+
+            <img class="load" id="load" src="../img/load.gif" height="150">
+        </div>
+            
+        <!-- BARRA DEL NAVEGADOR -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" width="150"></a>
+            
+            <div class="collapse navbar-collapse nav navbar-nav navbar-center" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Noticies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Comunitat</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Area
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Creació Artistica</a>
+                    <a class="dropdown-item" href="#">Ludoteca</a>
+                    <a class="dropdown-item" href="#">Diversitat</a>
+                    <a class="dropdown-item" href="#">Art moviment</a>
+                    <a class="dropdown-item" href="#">Música i so</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Propostes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="collapse navbar-collapse nav navbar-nav navbar-right">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./html/sesion.html">sesion</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+        
+        <br><br><br>
+
+        <div class="col-md-12 row">
+            <div class="col-md-4">
+                <span> </span>
+            </div>
+            <div class="col-md-4 text-center">
+                <h1> Inicia sessió </h1>
+                <form action="#">
+                    <div class="form-group">
+                      <label for="usuari">Usuari:</label>
+                      <input type="usuari" class="form-control" placeholder="Usuari" id="UserDNI">
+                    </div>
+                    <div class="form-group">
+                      <label for="pwd">Password:</label>
+                      <input type="password" class="form-control" placeholder="password" id="UserPassword">
+                    </div>
+                    <div class="form-group form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Recordar-me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btnIngresar" onclick="getUserFromStorage()">Inicia sessió</button>
+                  </form>
+                <br>
+                <button type="#" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Com puc registrar?</button>
+            </div>
+            <div class="col-md-4">
+                <span> </span>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Com puc registrar-me?</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <p>Per porder registrar i participar els tallers i les activitats que proporcionam els espais joves. Tens que anar als casals per poder registrarte la participació.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">D'acord</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- PIE -->
+        <footer class="fixed-bottom">
+            <hr>
+            <div class="text-center">
+                <p>Desenvolupat per: Joan Sebastia Penya Torres - (c) 2020</p>
+            </div>
+        </footer>
+
+        <!-- SCRIPTING -->
+        <script>
+            window.onload = function(){
+                var contenedor = document.getElementById('contenedor_carga');
+
+                contenedor.style.visibility = 'hidden';
+                contenedor.style.opacity = '0';
+                document.querySelector('#btnIngresar').addEventListener('click', iniciarSesion);
+            }
+        </script>
+        <script src="../js/index.js"></script>
+    </body>
+</html>
